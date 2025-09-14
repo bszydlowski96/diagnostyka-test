@@ -19,5 +19,13 @@ export default tseslint.config([
       ecmaVersion: 2020,
       globals: globals.browser,
     },
+    // ⬇️ DODAJ TO
+    plugins: {
+      'react-refresh': reactRefresh,
+    },
+    rules: {
+      // pozwól na eksport o nazwie "useCart" w plikach z komponentami
+      'react-refresh/only-export-components': ['warn', { allowExportNames: ['useCart'] }],
+    },
   },
 ])

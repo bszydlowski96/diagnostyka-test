@@ -1,0 +1,304 @@
+{
+  "studies": [
+    {
+      "id": "morf-1",
+      "name": "Morfologia krwi",
+      "code": "MORF",
+      "category": "Krew",
+      "price": 29.0,
+      "etaMinutes": 15,
+      "preparation": "Na czczo",
+      "description": "Podstawowe badanie krwi oceniające elementy morfotyczne."
+    },
+    {
+      "id": "tsh-1",
+      "name": "TSH",
+      "code": "TSH",
+      "category": "Hormony",
+      "price": 39.0,
+      "etaMinutes": 20,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Hormon tyreotropowy, ocena funkcji tarczycy."
+    },
+    {
+      "id": "gluc-1",
+      "name": "Glukoza",
+      "code": "GLU",
+      "category": "Krew",
+      "price": 19.0,
+      "etaMinutes": 10,
+      "preparation": "Na czczo",
+      "description": "Pomiar poziomu glukozy we krwi."
+    },
+    {
+      "id": "chol-1",
+      "name": "Cholesterol całkowity",
+      "code": "CHOL",
+      "category": "Biochemia",
+      "price": 25.0,
+      "etaMinutes": 15,
+      "preparation": "Na czczo 12h",
+      "description": "Badanie poziomu cholesterolu całkowitego we krwi."
+    },
+    {
+      "id": "hdl-1",
+      "name": "Cholesterol HDL",
+      "code": "HDL",
+      "category": "Biochemia",
+      "price": 28.0,
+      "etaMinutes": 15,
+      "preparation": "Na czczo 12h",
+      "description": "Pomiar frakcji dobrego cholesterolu."
+    },
+    {
+      "id": "ldl-1",
+      "name": "Cholesterol LDL",
+      "code": "LDL",
+      "category": "Biochemia",
+      "price": 28.0,
+      "etaMinutes": 15,
+      "preparation": "Na czczo 12h",
+      "description": "Pomiar frakcji złego cholesterolu."
+    },
+    {
+      "id": "tg-1",
+      "name": "Trójglicerydy",
+      "code": "TG",
+      "category": "Biochemia",
+      "price": 22.0,
+      "etaMinutes": 15,
+      "preparation": "Na czczo 12h",
+      "description": "Badanie poziomu trójglicerydów."
+    },
+    {
+      "id": "crp-1",
+      "name": "CRP",
+      "code": "CRP",
+      "category": "Krew",
+      "price": 35.0,
+      "etaMinutes": 30,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Białko C-reaktywne, marker stanu zapalnego."
+    },
+    {
+      "id": "ft3-1",
+      "name": "FT3",
+      "code": "FT3",
+      "category": "Hormony",
+      "price": 42.0,
+      "etaMinutes": 20,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Wolna trójjodotyronina, hormon tarczycy."
+    },
+    {
+      "id": "ft4-1",
+      "name": "FT4",
+      "code": "FT4",
+      "category": "Hormony",
+      "price": 42.0,
+      "etaMinutes": 20,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Wolna tyroksyna, hormon tarczycy."
+    },
+    {
+      "id": "b12-1",
+      "name": "Witamina B12",
+      "code": "B12",
+      "category": "Witaminy",
+      "price": 48.0,
+      "etaMinutes": 25,
+      "preparation": "Na czczo",
+      "description": "Poziom witaminy B12 we krwi."
+    },
+    {
+      "id": "d3-1",
+      "name": "Witamina D3",
+      "code": "D3",
+      "category": "Witaminy",
+      "price": 65.0,
+      "etaMinutes": 30,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Poziom witaminy D3 (25-OH)."
+    },
+    {
+      "id": "fe-1",
+      "name": "Żelazo",
+      "code": "FE",
+      "category": "Biochemia",
+      "price": 20.0,
+      "etaMinutes": 15,
+      "preparation": "Na czczo, rano",
+      "description": "Poziom żelaza w surowicy."
+    },
+    {
+      "id": "ferr-1",
+      "name": "Ferrytyna",
+      "code": "FERR",
+      "category": "Biochemia",
+      "price": 45.0,
+      "etaMinutes": 20,
+      "preparation": "Na czczo",
+      "description": "Badanie magazynów żelaza w organizmie."
+    },
+    {
+      "id": "mg-1",
+      "name": "Magnez",
+      "code": "MG",
+      "category": "Elektrolity",
+      "price": 18.0,
+      "etaMinutes": 15,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Poziom magnezu we krwi."
+    },
+    {
+      "id": "ca-1",
+      "name": "Wapń całkowity",
+      "code": "CA",
+      "category": "Elektrolity",
+      "price": 18.0,
+      "etaMinutes": 15,
+      "preparation": "Na czczo",
+      "description": "Poziom wapnia całkowitego."
+    },
+    {
+      "id": "na-1",
+      "name": "Sód",
+      "code": "NA",
+      "category": "Elektrolity",
+      "price": 15.0,
+      "etaMinutes": 10,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Poziom sodu we krwi."
+    },
+    {
+      "id": "k-1",
+      "name": "Potas",
+      "code": "K",
+      "category": "Elektrolity",
+      "price": 15.0,
+      "etaMinutes": 10,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Poziom potasu we krwi."
+    },
+    {
+      "id": "urea-1",
+      "name": "Mocznik",
+      "code": "UREA",
+      "category": "Biochemia",
+      "price": 18.0,
+      "etaMinutes": 15,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Badanie funkcji nerek."
+    },
+    {
+      "id": "crea-1",
+      "name": "Kreatynina",
+      "code": "CREA",
+      "category": "Biochemia",
+      "price": 18.0,
+      "etaMinutes": 15,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Ocena funkcji nerek."
+    },
+    {
+      "id": "alt-1",
+      "name": "ALT",
+      "code": "ALT",
+      "category": "Enzymy",
+      "price": 20.0,
+      "etaMinutes": 15,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Aminotransferaza alaninowa, enzym wątrobowy."
+    },
+    {
+      "id": "ast-1",
+      "name": "AST",
+      "code": "AST",
+      "category": "Enzymy",
+      "price": 20.0,
+      "etaMinutes": 15,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Aminotransferaza asparaginianowa, enzym wątrobowy."
+    },
+    {
+      "id": "ggtp-1",
+      "name": "GGTP",
+      "code": "GGTP",
+      "category": "Enzymy",
+      "price": 22.0,
+      "etaMinutes": 15,
+      "preparation": "Na czczo",
+      "description": "Gamma-glutamylotranspeptydaza, enzym wątrobowy."
+    },
+    {
+      "id": "bil-1",
+      "name": "Bilirubina całkowita",
+      "code": "BIL",
+      "category": "Biochemia",
+      "price": 20.0,
+      "etaMinutes": 15,
+      "preparation": "Na czczo",
+      "description": "Produkt rozpadu hemoglobiny."
+    },
+    {
+      "id": "amyl-1",
+      "name": "Amylaza",
+      "code": "AMYL",
+      "category": "Enzymy",
+      "price": 25.0,
+      "etaMinutes": 15,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Enzym trzustkowy."
+    },
+    {
+      "id": "lipaza-1",
+      "name": "Lipaza",
+      "code": "LIP",
+      "category": "Enzymy",
+      "price": 30.0,
+      "etaMinutes": 20,
+      "preparation": "Na czczo",
+      "description": "Enzym trzustkowy trawiący tłuszcze."
+    },
+    {
+      "id": "psa-1",
+      "name": "PSA całkowite",
+      "code": "PSA",
+      "category": "Markery",
+      "price": 55.0,
+      "etaMinutes": 30,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Antygen sterczowy, badanie prostaty."
+    },
+    {
+      "id": "hba1c-1",
+      "name": "HbA1c",
+      "code": "HBA1C",
+      "category": "Krew",
+      "price": 45.0,
+      "etaMinutes": 25,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Hemoglobina glikowana, kontrola cukrzycy."
+    },
+    {
+      "id": "inr-1",
+      "name": "INR",
+      "code": "INR",
+      "category": "Krzepnięcie",
+      "price": 25.0,
+      "etaMinutes": 20,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Wskaźnik czasu protrombinowego."
+    },
+    {
+      "id": "aptt-1",
+      "name": "APTT",
+      "code": "APTT",
+      "category": "Krzepnięcie",
+      "price": 28.0,
+      "etaMinutes": 20,
+      "preparation": "Brak szczególnych wymagań",
+      "description": "Czas częściowej tromboplastyny po aktywacji."
+    }
+  ]
+}
