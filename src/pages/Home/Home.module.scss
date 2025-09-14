@@ -1,10 +1,10 @@
-@use '../../styles/variables' as *;
-@use '../../styles/mixins' as *;
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
 
 .container {
   display: grid;
   gap: 1.5rem;
-  
+
   @media (min-width: $bp-lg) {
     grid-template-columns: 1fr 400px;
   }
@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 1.5rem;
-  background: linear-gradient(135deg, $color-bg, white);
+  background: $color-border;
   border-bottom: 1px solid $color-border;
 }
 

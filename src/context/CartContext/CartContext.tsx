@@ -4,6 +4,7 @@ import {
   useMemo,
   useReducer,
   useEffect,
+  useRef,
   type ReactNode,
 } from "react";
 import type {
@@ -20,14 +21,22 @@ const initialState: CartState = { items: {} };
 function cartReducer(state: CartState, action: CartAction): CartState {
   switch (action.type) {
     case "ADD":
+      localStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({
+          items: { ...state.items, [action.item.id]: action.item },
+        })
+      );
       return {
         items: { ...state.items, [action.item.id]: action.item },
       };
     case "REMOVE": {
       const { [action.id]: _, ...rest } = state.items;
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ items: rest }));
       return { items: rest };
     }
     case "CLEAR":
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ items: {} }));
       return { items: {} };
     case "LOAD":
       return action.state;
@@ -40,6 +49,7 @@ const CartContext = createContext<CartContextValue | null>(null);
 
 export function CartProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(cartReducer, initialState);
+  const isInitialized = useRef(false);
 
   useEffect(() => {
     try {
@@ -50,16 +60,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
       }
     } catch (error) {
       console.error("Failed to load cart from storage:", error);
+    } finally {
+      isInitialized.current = true;
     }
   }, []);
-
-  useEffect(() => {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-    } catch (error) {
-      console.error("Failed to save cart to storage:", error);
-    }
-  }, [state]);
 
   const value = useMemo<CartContextValue>(() => {
     const items = Object.values(state.items);

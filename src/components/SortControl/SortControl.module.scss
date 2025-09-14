@@ -23,7 +23,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 0.25rem;
   padding: 0.25rem;
-  background: $color-bg;
+  background: $color-border;
   border-radius: $radius-lg;
 }
 
@@ -49,12 +49,12 @@
   }
 
   &:hover {
-    background: white;
+    background: $color-bg;
     color: $color-fg;
   }
 
   &.active {
-    background: white;
+    background: $color-bg;
     color: $color-primary;
     box-shadow: $shadow-sm;
 

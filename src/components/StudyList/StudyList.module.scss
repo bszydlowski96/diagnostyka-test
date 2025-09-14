@@ -78,23 +78,42 @@
   letter-spacing: 0.05em;
 
   &--krew {
-    background: #fee2e2;
+    background: rgba(220, 38, 38, 0.1);
     color: #dc2626;
   }
 
   &--hormony {
-    background: #ddd6fe;
+    background: rgba(124, 58, 237, 0.1);
     color: #7c3aed;
   }
 
   &--mocz {
-    background: #fed7aa;
+    background: rgba(234, 88, 12, 0.1);
     color: #ea580c;
   }
 
   &--default {
-    background: $color-bg;
+    background: $color-border;
     color: $color-muted;
+  }
+}
+
+[data-theme="dark"] {
+  .category {
+    &--krew {
+      background: rgba(220, 38, 38, 0.2);
+      color: #fca5a5;
+    }
+
+    &--hormony {
+      background: rgba(124, 58, 237, 0.2);
+      color: #c4b5fd;
+    }
+
+    &--mocz {
+      background: rgba(234, 88, 12, 0.2);
+      color: #fdba74;
+    }
   }
 }
 
@@ -180,8 +199,13 @@
   align-items: center;
   padding: 2rem;
   gap: 1rem;
-  background: #fef2f2;
-  border-color: #fecaca;
+  background: rgba(254, 242, 242, 0.8);
+  border-color: rgba(254, 202, 202, 0.8);
+}
+
+[data-theme="dark"] .error {
+  background: rgba(127, 29, 29, 0.3);
+  border-color: rgba(185, 28, 28, 0.5);
 }
 
 .errorIcon {
@@ -201,7 +225,7 @@
   background: $color-danger;
 
   &:hover {
-    background: darken($color-danger, 10%);
+    background: $color-danger;
   }
 }
 

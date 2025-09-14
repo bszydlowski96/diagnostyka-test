@@ -1,0 +1,30 @@
+@use "../../styles/variables" as *;
+
+.toggle {
+  padding: 0.5rem;
+  background: transparent;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  color: $color-muted;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    background: $color-bg;
+    color: $color-fg;
+    border-color: $color-primary;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($color-primary, 0.1);
+  }
+}

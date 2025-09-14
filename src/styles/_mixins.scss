@@ -1,4 +1,4 @@
-@use './variables' as *;
+@use "./variables" as *;
 
 @mixin container($max: 72rem) {
   max-width: $max;
@@ -10,7 +10,7 @@
   border: 1px solid $color-border;
   border-radius: $radius-lg;
   padding: 1rem;
-  background: white;
+  background: $color-bg;
   box-shadow: $shadow-sm;
 }
 
@@ -26,7 +26,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  
+
   &:disabled {
     opacity: 0.5;
     cursor: not-allowed;
@@ -36,10 +36,10 @@
 @mixin button-primary {
   @include button-base;
   background: $color-primary;
-  color: white;
-  
+  color: $color-bg;
+
   &:hover:not(:disabled) {
-    background: darken($color-primary, 10%);
+    background: $color-primary-light;
     transform: translateY(-1px);
     box-shadow: $shadow-md;
   }
@@ -50,10 +50,10 @@
   background: transparent;
   color: $color-fg;
   border: 1px solid $color-border;
-  
+
   &:hover:not(:disabled) {
-    background: $color-bg;
-    border-color: darken($color-border, 10%);
+    background: $color-border;
+    border-color: $color-muted;
   }
 }
 
@@ -67,5 +67,7 @@
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }

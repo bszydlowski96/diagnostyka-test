@@ -27,7 +27,7 @@
   padding: 0.625rem 2.5rem 0.625rem 0.875rem;
   border: 1px solid $color-border;
   border-radius: $radius-lg;
-  background: white;
+  background: $color-bg;
   font-size: 0.875rem;
   color: $color-fg;
   cursor: pointer;
@@ -37,11 +37,11 @@
   &:focus {
     outline: none;
     border-color: $color-primary;
-    box-shadow: 0 0 0 3px rgba($color-primary, 0.1);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
   }
 
   &:hover {
-    border-color: darken($color-border, 10%);
+    border-color: $color-muted;
   }
 }
 

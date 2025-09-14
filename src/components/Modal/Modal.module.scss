@@ -1,5 +1,5 @@
-@use '../../styles/variables' as *;
-@use '../../styles/mixins' as *;
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
 
 .overlay {
   position: fixed;
@@ -14,23 +14,28 @@
   animation: fadeIn 0.2s ease;
 }
 
+[data-theme="dark"] .overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
 .dialog {
-  background: white;
+  background: $color-bg;
+  border: 1px solid $color-border;
   border-radius: $radius-2xl;
   box-shadow: $shadow-xl;
   max-height: 90vh;
   display: flex;
   flex-direction: column;
   animation: slideUp 0.3s ease;
-  
+
   &--sm {
     width: min(400px, 100%);
   }
-  
+
   &--md {
     width: min(600px, 100%);
   }
-  
+
   &--lg {
     width: min(800px, 100%);
   }
@@ -62,12 +67,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   &:hover {
-    background: $color-bg;
+    background: $color-border;
     color: $color-fg;
   }
-  
+
   svg {
     width: 20px;
     height: 20px;
@@ -78,6 +83,7 @@
   padding: 1.5rem;
   overflow-y: auto;
   flex: 1;
+  background: $color-bg;
 }
 
 @keyframes fadeIn {
